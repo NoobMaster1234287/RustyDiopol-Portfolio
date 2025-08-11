@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rusty Diopol - Portfolio</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        .section-title {
+            @apply text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center;
+        }
+        .card {
+            @apply bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl;
+        }
+    </style>
+</head>
+<body class="text-gray-700">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-800">Rusty Diopol</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#about" class="text-gray-600 hover:text-indigo-600 transition duration-300">About</a>
+                <a href="#skills" class="text-gray-600 hover:text-indigo-600 transition duration-300">Skills</a>
+                <a href="#projects" class="text-gray-600 hover:text-indigo-600 transition duration-300">Projects</a>
+                <a href="#contact" class="bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition duration-300">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4">
+            <a href="#about" class="block py-2 text-gray-600 hover:text-indigo-600">About</a>
+            <a href="#skills" class="block py-2 text-gray-600 hover:text-indigo-600">Skills</a>
+            <a href="#projects" class="block py-2 text-gray-600 hover:text-indigo-600">Projects</a>
+            <a href="#contact" class="block mt-2 bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 text-center">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="py-20 md:py-32 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <div class="max-w-4xl mx-auto">
+                    <img src="1.png.png" alt="" class="w-36 h-36 rounded-full mx-auto mb-6 shadow-lg">
+                    <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-4">Hi, I'm Rusty Diopol</h1>
+                    <p class="text-xl md:text-2xl text-indigo-600 font-medium mb-8">BSIT Student</p>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-10">
+                        Hi!!!
+                    </p>
+                    <a href="#projects" class="bg-indigo-600 text-white py-3 px-8 rounded-full text-lg font-semibold hover:bg-indigo-700 transition duration-300 transform hover:scale-105">View My Work</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">About Me</h2>
+                <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-10">
+                    <div class="md:w-2/3 text-lg text-gray-600 space-y-4">
+                        <p>Hi, I'm a STI WNU student in Bacolod City. I attended this institution for more than nine years, and I'm taking a BSIT (Bachelor of Science in Information Technology) course. When I'm not in class, I like to eat, play computer games, or sleep to relax.</p>
+                    </div>
+                    <div class="md:w-1/3 flex justify-center">
+                        <img src="Media.png" class="rounded-xl shadow-lg w-64 h-64 md:w-full md:h-auto object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">My Skills</h2>
+                <div class="max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 gap-6 justify-center text-center">
+                    <div class="skill-item bg-gray-100 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <i class="fab fa-html5 text-4xl text-orange-500 mb-2"></i>
+                        <p class="font-semibold">HTML5</p>
+                    </div>
+                    <div class="skill-item bg-gray-100 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <i class="fab fa-js-square text-4xl text-yellow-500 mb-2"></i>
+                        <p class="font-semibold">JavaScript</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">My Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <div class="card">
+                        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3534630/f55f1ca80e59842cc3850ce76bf82f0e8d89ca56/capsule_616x353.jpg?t=1743189994" alt="Project 1 Screenshot" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-gray-800">Stellar Drift</h3>
+                            <p class="text-gray-600 mb-4">A space-exploration and trading simulation. You'll captain your own starship, navigate a procedurally generated galaxy, and make a fortune by trading resources, completing missions, or even becoming a space pirate.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://img.itch.zone/aW1hZ2UvMTc5NDMwMi8xMDU0MzAyNi5wbmc=/original/IYAp%2FU.png" alt="Project 2 Screenshot" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-gray-800">Echoes of the Void</h3>
+                            <p class="text-gray-600 mb-4">A psychological horror game where you're stranded on a derelict spaceship. Your mission is to uncover the truth behind the crew's disappearance by solving puzzles and avoiding an unseen entity that preys on your fears.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://steampunk-explorer.com/sites/default/files/images/Unreal_Engine_Demo_Screenshot_2019.04.28_-_16.57.04.23-747.jpg">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-gray-800">Ironclad Reckoning</h3>
+                            <p class="text-gray-600 mb-4">A tactical RPG set in a steampunk world. You'll command a squad of unique heroes, each with their own specialized mechanical suits, and engage in grid-based combat to dismantle a tyrannical empire.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="max-w-2xl mx-auto text-center">
+                    <p class="text-lg text-gray-600 mb-8">I'm currently open to new opportunities and collaborations. Feel free to send me a message!</p>
+                    <a href="mailto:your.email@example.com" class="inline-block bg-indigo-600 text-white py-3 px-8 rounded-full text-lg font-semibold hover:bg-indigo-700 transition duration-300 transform hover:scale-105">
+                        <i class="fas fa-envelope mr-2"></i> Say Hello
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="#" class="text-2xl hover:text-indigo-400 transition-colors"><i class="fab fa-github"></i></a>
+                <a href="#" class="text-2xl hover:text-indigo-400 transition-colors"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="text-2xl hover:text-indigo-400 transition-colors"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; 2024 Rusty Diopol. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let link of mobileMenuLinks) {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+    </script>
+
+</body>
+</html>
